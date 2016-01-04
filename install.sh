@@ -1,3 +1,13 @@
+echo '                                              '
+echo '              __               __             '
+echo '  ___   _ __ /\_\     __      /\_\    ___     '
+echo ' / __`\/\`'"'"'__\/\ \  /'"'"'_ `\    \/\ \ /'"'"' _ `\   '
+echo '/\ \L\ \ \ \/ \ \ \/\ \L\ \  __\ \ \/\ \/\ \  '
+echo '\ \____/\ \_\  \ \_\ \____ \/\_\\ \_\ \_\ \_\ '
+echo ' \/___/  \/_/   \/_/\/___L\ \/_/ \/_/\/_/\/_/ '
+echo '                      /\____/                 '
+echo '                      \_/__/                  '
+echo ''
 ORIGIN_HOME=~/.orig.in
 JAVA_DOWNLOAD=http://get.jenv.mvnsearch.org/download/java/java-1.8.0_60.zip
 JAVA_DOWNLOAD_BIN=unknown

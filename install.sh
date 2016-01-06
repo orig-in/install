@@ -20,7 +20,7 @@ esac
 JAVA_BIN=java
 if ! $JAVA_BIN -version; then
 	echo "no java found. installing ..."
-	wget $JAVA_DOWNLOAD -O $ORIGIN_HOME/java.zip
+	wget -N $JAVA_DOWNLOAD -O $ORIGIN_HOME/java.zip
 	unzip $ORIGIN_HOME/java.zip -d $ORIGIN_HOME/java/
 	JAVA_BIN=$JAVA_DOWNLOAD_BIN
 	$JAVA_BIN -version
@@ -29,6 +29,6 @@ if [ ! -d "$ORIGIN_HOME" ]; then
 	echo creating $ORIGIN_HOME
 	mkdir $ORIGIN_HOME
 fi
-wget http://orig-in.github.io/download/install.jar -O $ORIGIN_HOME/install.jar
+wget -N http://orig-in.github.io/download/install.jar -O $ORIGIN_HOME/install.jar
 java -jar $ORIGIN_HOME/install.jar
 

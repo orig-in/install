@@ -23,7 +23,7 @@ case "`uname`" in
 esac
 JAVA_BIN=java
 if ! $JAVA_BIN -version; then
-	echo "no java found. installing ..."
+	echo "java executable not found ... installing"
 	wget -N $JAVA_DOWNLOAD -O $ORIGIN_HOME/java.zip
 	unzip $ORIGIN_HOME/java.zip -d $ORIGIN_HOME/java/
 	JAVA_BIN=$JAVA_DOWNLOAD_BIN

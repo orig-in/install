@@ -30,5 +30,5 @@ if ! $JAVA_BIN -version; then
 	$JAVA_BIN -version
 fi
 wget -N http://orig-in.github.io/download/install.jar -O $ORIGIN_HOME/install.jar
-java -jar $ORIGIN_HOME/install.jar
+sudo java -jar $ORIGIN_HOME/install.jar
 

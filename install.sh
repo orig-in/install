@@ -8,7 +8,7 @@ echo ' \/___/  \/_/   \/_/\/___L\ \/_/ \/_/\/_/\/_/ '
 echo '                      /\____/                 '
 echo '                      \_/__/                  '
 echo ''
-ORIGIN_HOME=~/.orig.in
+ORIGIN_HOME="${ORIGIN_HOME:-~/.orig.in}"
 if [ ! -d "$ORIGIN_HOME" ]; then
 	echo creating $ORIGIN_HOME
 	mkdir $ORIGIN_HOME

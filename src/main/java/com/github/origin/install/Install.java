@@ -18,6 +18,9 @@ public class Install {
 		case MAC:
 			new MacInstaller().install();
 			break;
+		case LINUX:
+			new LinuxInstaller().install();
+			break;
 		default:
 			System.out.println("ERROR : operating system not yet supported.");
 		}

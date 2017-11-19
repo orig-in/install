@@ -36,9 +36,8 @@ if ERRORLEVEL 1 (
 	%JAVA_BIN% -version
 ) 
 call:download "http://orig-in.github.io/download/install.jar" "%ORIGIN_HOME%/install.jar"
-call:download "http://orig-in.github.io/install/elevate.exe" "%ORIGIN_HOME%/elevate.exe"
 
-"%ORIGIN_HOME%/elevate.exe" %JAVA_BIN% -jar "%ORIGIN_HOME%/install.jar"
+%JAVA_BIN% -jar "%ORIGIN_HOME%/install.jar"
 
 
 ::--------------------------------------------------------

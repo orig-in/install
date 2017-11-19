@@ -8,7 +8,12 @@ echo ' \/___/  \/_/   \/_/\/___L\ \/_/ \/_/\/_/\/_/ '
 echo '                      /\____/                 '
 echo '                      \_/__/                  '
 echo ''
-ORIGIN_HOME="${ORIGIN_HOME:-~/.orig.in}"
+if [[ -z "${ORIGIN_HOME}" ]]; then
+  ORIGIN_HOME=~/.orig.in
+else
+  ORIGIN_HOME="${ORIGIN_HOME}"
+fi
+
 if [ ! -d "$ORIGIN_HOME" ]; then
 	echo creating $ORIGIN_HOME
 	mkdir $ORIGIN_HOME
@@ -30,5 +35,5 @@ if ! $JAVA_BIN -version; then
 	$JAVA_BIN -version
 fi
 wget -N http://orig-in.github.io/download/install.jar -O $ORIGIN_HOME/install.jar
-sudo java -jar $ORIGIN_HOME/install.jar
+java -jar $ORIGIN_HOME/install.jar
 

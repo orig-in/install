@@ -28,6 +28,9 @@ public class Install {
 		case LINUX:
 			new LinuxInstaller().install();
 			break;
+		case WINDOWS:
+				new WindowsInstaller().install();
+				break;
 		default:
 			System.out.println("ERROR : operating system not yet supported.");
 		}

@@ -50,7 +50,7 @@ if [ ! -d "$ORIGIN_HOME/java/latest" ]; then
 fi
 
 wget -N http://orig-in.github.io/download/install.jar -O $ORIGIN_HOME/install.jar
-wget -N http://orig-in.github.io/download/origin-upgrade.jar -O $ORIGIN_HOME/origin-upgrade.jar
+wget -N http://orig-in.github.io/download/origin-upgrade.jar -O $ORIGIN_HOME/origin.jar
 wget -N http://orig-in.github.io/download/relaunch.jar -O $ORIGIN_HOME/relaunch.jar
 $ORIGIN_HOME/java/latest/bin/java -jar $ORIGIN_HOME/install.jar
 

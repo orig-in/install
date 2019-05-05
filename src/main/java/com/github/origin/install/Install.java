@@ -37,7 +37,8 @@ public class Install {
 	}
 
 	private static File detectHome() {
-		String envVar = System.getenv("ORIGIN_HOME");
+		String envVar = System.getProperty("ORIGIN_HOME");
+		if(envVar == null)  envVar = System.getenv("ORIGIN_HOME");
 		return envVar == null ? new File(getProperty("user.home"), ".orig.in") : new File(envVar);
 	}
 

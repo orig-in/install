@@ -12,7 +12,7 @@ $ORIGIN_HOME="$env:USERPROFILE\.orig.in"
 $ORIGIN_BOOTSTRAP="$ORIGIN_HOME\bootstrap"
 md $ORIGIN_BOOTSTRAP -ea 0 | Out-Null
 
-$JAVA_BIN="java2"
+$JAVA_BIN="java"
 
 function download ($src, $dst){
     Write-Output "downloading $src to $dst"

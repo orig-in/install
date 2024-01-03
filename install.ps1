@@ -38,9 +38,9 @@ try {
 } catch {
  	Write-Output "java executable not found ... installing"
  	$BOOTSTRAP_JRE_ZIP="$ORIGIN_BOOTSTRAP\bootstrap_jre.zip"
-	download "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1+12/OpenJDK21U-jre_x64_windows_hotspot_21.0.1_12.zip"  $BOOTSTRAP_JRE_ZIP
+	download "https://api.foojay.io/disco/v3.0/directuris?distro=temurin&javafx_bundled=false&libc_type=c_std_lib&archive_type=zip&operating_system=windows&package_type=jre&version=21&architecture=x64&latest=available"  $BOOTSTRAP_JRE_ZIP
 	unzip $BOOTSTRAP_JRE_ZIP $ORIGIN_BOOTSTRAP
-	$JAVA_BIN="$ORIGIN_BOOTSTRAP\jdk-21.0.1+12-jre\bin\java.exe"
+	$JAVA_BIN="$ORIGIN_BOOTSTRAP\$(Get-ChildItem -Path $ORIGIN_BOOTSTRAP -Directory -Name)\bin\java.exe"
 }
 
 $INSTALL_JAR="$ORIGIN_BOOTSTRAP\install.jar"
